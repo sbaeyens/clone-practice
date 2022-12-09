@@ -1,0 +1,254 @@
+* {
+  /* - "Neue Plak", sans-serif */
+  font-family: "Neue Plak", sans-serif;
+
+  /* Colors
+- Background: #eeedf2
+- Basic text color: #6f7287 (when not specified otherwise)
+- Button border color: #6f7287
+- Header text color: #f05537
+- Footer Background: #1e0a3c
+- Footer text color: #FFFFFF */
+
+  background-color: #eeedf2;
+  color: #6f7287;
+}
+
+button {
+  border: 1px solid #6f7287;
+}
+
+h1 {
+  color: #f05537;
+}
+
+h2 {
+  color: #6f7287;
+}
+
+.footer-div {
+  height: 100px;
+  background-color: #1e0a3c;
+  color: #ffffff;
+  align-items: center;
+  display: flex;
+  justify-content: right;
+}
+
+.footer-div p {
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #1e0a3c;
+  margin-right: 100px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  padding-left: 15px;
+}
+
+.nav__search {
+  justify-content: center;
+  color: black;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 5px grey;
+  padding: 5px;
+}
+
+.nav__search#search > input {
+  color: #1e0a3c;
+  border-style: none;
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  /*-webkit-box-shadow: none;
+  -moz-box-shadow: none; */
+  box-shadow: none;
+  align-items: center;
+}
+
+.nav__search #search {
+  box-shadow: none;
+}
+
+#search i {
+  background-color: #ffffff;
+}
+
+#searchinput {
+  border: none;
+  background-color: #ffffff;
+}
+
+.nav__buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.nav__nav-links {
+  padding: 0 20px;
+}
+
+.nav__buttons a {
+  color: #f05537;
+  text-decoration: none;
+}
+
+.categories {
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  width: 100%;
+  /* max-width: 800px; */
+  justify-content: space-between;
+}
+
+/* .categories__button {
+} */
+
+button {
+  padding: 1rem 5.7rem;
+  box-shadow: 2px 2px 5px #6f7287;
+  background-color: rgb(230, 230, 230);
+}
+
+button i {
+  background-color: rgb(230, 230, 230);
+}
+
+button:hover {
+  border-color: #f05537;
+  color: #f05537;
+}
+
+button:hover i {
+  color: #f05537;
+}
+
+.events__container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+  margin-left: 50px;
+  /* justify-content: center; */
+}
+
+.events__container:not(.events__container > div:lastchild) {
+  justify-content: center;
+}
+
+.events__eventcard {
+  flex-basis: 45%;
+  /* width: 50%; */
+  /* border: 1px solid #6f7287; */
+  /* background-color: aquamarine; */
+}
+
+.events__eventcard p {
+  /* background-color: aquamarine; */
+}
+
+.eventcard__title a {
+  color: purple;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+.price {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.eventcard__img {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.seemore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.seemore button {
+  padding: 1.5rem 7rem;
+}
+
+img {
+  width: 100%;
+  max-height: 200px;
+}
+
+@media screen and (max-width: 700px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav__search {
+    width: 98%;
+    z-index: 1;
+  }
+
+  .nav__nav-links {
+    margin-top: 20px;
+  }
+
+  .categories {
+    flex-direction: column;
+  }
+
+  .categories button {
+    width: 98%;
+    margin: 5px;
+  }
+
+  .events__container {
+    flex-direction: column;
+    margin-left: 0px;
+  }
+
+  .events__eventcard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* width: 50%; */
+    /* border: 1px solid #6f7287; */
+    /* background-color: aquamarine; */
+  }
+
+  .eventcard__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  img {
+    width: 100%;
+    max-height: 100%;
+  }
+
+  .price {
+  }
+}
